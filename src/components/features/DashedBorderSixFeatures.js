@@ -11,10 +11,10 @@ import { ReactComponent as SvgDecoratorBlob3 } from "../../images/svg-decorator-
 
 import SupportIconImage from "../../images/support-icon.svg";
 import ShieldIconImage from "../../images/shield-icon.svg";
-import CustomizeIconImage from "../../images/customize-icon.svg";
+// /import CustomizeIconImage from "../../images/customize-icon.svg";
 import FastIconImage from "../../images/fast-icon.svg";
 import ReliableIconImage from "../../images/reliable-icon.svg";
-import SimpleIconImage from "../../images/simple-icon.svg";
+// import SimpleIconImage from "../../images/simple-icon.svg";
 
 const Container = tw.div`relative`;
 
@@ -66,13 +66,11 @@ export default () => {
     {
       imageSrc: ShieldIconImage,
       title: "Ads Management",
-      description: "We create and manage ads that you need, from creation to deployment. Lorem ipsum donor sit amet consicou."
+      description: "We create and manage ads that you need, from creation to deployment."
     },
-    { imageSrc: SupportIconImage, title: "Video Marketing" },
-    { imageSrc: CustomizeIconImage, title: "Customer Relation" },
-    { imageSrc: ReliableIconImage, title: "Product Outreach" },
-    { imageSrc: FastIconImage, title: "PR Campaign" },
-    { imageSrc: SimpleIconImage, title: "Product Expansion" }
+    { imageSrc: SupportIconImage, title: "Video Marketing", description:"We are an expert in Video Marketing. From creating high quality videos to getting them viral across all social media platforms. We can play it all." },
+    { imageSrc: ReliableIconImage, title: "Product Outreach",description:"We can create good product outreach through webinars, funnels etc." },
+    { imageSrc: FastIconImage, title: "PR Campaign",description:"Our team can get your product listed on one of the top rated media outlets that can provide you all the reach and credibility." },
   ];
 
   return (
@@ -88,7 +86,7 @@ export default () => {
               <span className="textContainer">
                 <span className="title">{card.title || "Fully Secure"}</span>
                 <p className="description">
-                  {card.description || "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud. Sic Semper Tyrannis. Neoas Calie artel."}
+                  {card.description}
                 </p>
               </span>
             </Card>
